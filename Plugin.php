@@ -81,16 +81,29 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
+        // return []; // Remove this line to activate
 
         return [
             'bardoniteszt' => [
-                'label'       => 'bardoniteszt',
-                'url'         => Backend::url('arteriaweb/bardoniteszt/mycontroller'),
+                'label'       => 'Bardoni Teszt',
+                'url'         => Backend::url('arteriaweb/bardoniteszt/products'),
                 'icon'        => 'icon-exclamation-triangle',
-                'permissions' => ['arteriaweb.bardoniteszt.*'],
+                // 'permissions' => ['arteriaweb.bardoniteszt.*'],
                 'order'       => 500,
-            ],
+
+                'sideMenu' => [
+                    'products'=> [
+                        'label'       => 'Products',
+                        'url'         => Backend::url('arteriaweb/catalog/products'),
+                        'icon'        => 'icon-exclamation-triangle',
+                    ],
+                    'maincats'=> [
+                        'label'       => 'Maincats',
+                        'url'         => Backend::url('arteriaweb/catalog/maincats'),
+                        'icon'        => 'icon-cogs',
+                    ],
+                ]
+            ]
         ];
     }
 }

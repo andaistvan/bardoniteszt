@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Product
+
+# Model Form Field configuration
+form: $/arteriaweb/bardoniteszt/models/product/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Bardoniteszt\Models\Product
+
+# Default redirect location
+defaultRedirect: arteriaweb/bardoniteszt/products
+
+# Create page
+create:
+    title: Create Product
+    redirect: arteriaweb/bardoniteszt/products/update/:id
+    redirectClose: arteriaweb/bardoniteszt/products
+
+# Update page
+update:
+    title: Edit Product
+    redirect: arteriaweb/bardoniteszt/products
+    redirectClose: arteriaweb/bardoniteszt/products
+
+# Preview page
+preview:
+    title: Preview Product
