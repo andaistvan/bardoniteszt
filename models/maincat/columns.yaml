@@ -6,3 +6,8 @@ columns:
     id:
         label: ID
         searchable: true
+
+    cat_title:
+        label: Kategória
+        searchable: true
+        sortable: true

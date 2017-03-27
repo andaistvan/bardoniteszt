@@ -6,3 +6,42 @@ columns:
     id:
         label: ID
         searchable: true
+
+    showroom:
+        label: Showroom
+        type: switch
+
+    # showroom:
+    #     label: Showroom
+    #     type: partial
+    #     path: ~/plugins/arteriaweb/bardoniteszt/models/product/_showroom_column.htm
+    #     sortable: true
+    #     searchable: true
+    #
+    # edit:
+    #     label: Edit
+    #     type: partial
+    #     path: ~/plugins/arteriaweb/bardoniteszt/models/product/_edit_column.htm
+    #     sortable: true
+    #     searchable: true
+
+    maincat:
+        label: Maincat
+        type: text
+        relation: maincat
+        select: cat_title
+        path: ~/plugins/arteriaweb/bardoniteszt/models/product/_maincat_column.htm
+        sortable: true
+        searchable: true
+
+    product_title_hu:
+        label: Termék neve
+        type: text
+        searchable: true
+        sortable: true
+
+    product_title_en:
+        label: Product name
+        type: text
+        searchable: true
+        sortable: true

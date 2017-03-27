@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Maincat
+
+# Model Form Field configuration
+form: $/arteriaweb/bardoniteszt/models/maincat/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Bardoniteszt\Models\Maincat
+
+# Default redirect location
+defaultRedirect: arteriaweb/bardoniteszt/maincats
+
+# Create page
+create:
+    title: Create Maincat
+    redirect: arteriaweb/bardoniteszt/maincats/update/:id
+    redirectClose: arteriaweb/bardoniteszt/maincats
+
+# Update page
+update:
+    title: Edit Maincat
+    redirect: arteriaweb/bardoniteszt/maincats
+    redirectClose: arteriaweb/bardoniteszt/maincats
+
+# Preview page
+preview:
+    title: Preview Maincat

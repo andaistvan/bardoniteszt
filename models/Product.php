@@ -27,7 +27,9 @@ class Product extends Model
      */
     public $hasOne = [];
     public $hasMany = [];
-    public $belongsTo = [];
+    public $belongsTo = [
+        'maincat' => [Maincat::class],
+    ];
     public $belongsToMany = [];
     public $morphTo = [];
     public $morphOne = [];

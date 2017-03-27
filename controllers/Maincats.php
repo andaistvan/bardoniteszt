@@ -4,9 +4,9 @@ use BackendMenu;
 use Backend\Classes\Controller;
 
 /**
- * Products Back-end Controller
+ * Maincats Back-end Controller
  */
-class Products extends Controller
+class Maincats extends Controller
 {
     public $implement = [
         'Backend.Behaviors.FormController',
@@ -20,7 +20,6 @@ class Products extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Arteriaweb.Bardoniteszt', 'bardoniteszt', 'products');
+        BackendMenu::setContext('Arteriaweb.Bardoniteszt', 'bardoniteszt', 'maincats');
     }
-
 }

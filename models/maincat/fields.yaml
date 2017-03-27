@@ -6,3 +6,13 @@ fields:
     id:
         label: ID
         disabled: true
+
+    cat_title:
+        label: Kategória
+        type: text
+
+    slug:
+        label: Slug
+        preset:
+            field: cat_title
+            type: slug

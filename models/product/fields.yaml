@@ -6,3 +6,43 @@ fields:
     id:
         label: ID
         disabled: true
+
+    category_section:
+        label: Kategória
+        type: section
+        comment: Beállítások
+
+    maincat:
+        label: Maincat
+        type: relation
+        nameFrom: cat_title
+        span: left
+
+    showroom:
+        label: showroom
+        type: switch
+        span: left
+
+
+    product_details_section:
+        label: Product details
+        type: section
+        comment: This section contains details about the user.
+
+    product_title_hu:
+        type: text
+        span: left
+
+    product_title_en:
+        type: text
+        span: right
+
+    description_hu:
+        label: description
+        type: textarea
+        span: left
+
+    description_en:
+        label: description
+        type: textarea
+        span: right

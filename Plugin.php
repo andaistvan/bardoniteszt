@@ -94,12 +94,12 @@ class Plugin extends PluginBase
                 'sideMenu' => [
                     'products'=> [
                         'label'       => 'Products',
-                        'url'         => Backend::url('arteriaweb/catalog/products'),
+                        'url'         => Backend::url('arteriaweb/bardoniteszt/products'),
                         'icon'        => 'icon-exclamation-triangle',
                     ],
                     'maincats'=> [
                         'label'       => 'Maincats',
-                        'url'         => Backend::url('arteriaweb/catalog/maincats'),
+                        'url'         => Backend::url('arteriaweb/bardoniteszt/maincats'),
                         'icon'        => 'icon-cogs',
                     ],
                 ]

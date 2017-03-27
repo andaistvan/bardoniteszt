@@ -3,19 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/arteriaweb/bardoniteszt/models/product/columns.yaml
+list: $/arteriaweb/bardoniteszt/models/maincat/columns.yaml
 
 # Model Class name
-modelClass: Arteriaweb\Bardoniteszt\Models\Product
+modelClass: Arteriaweb\Bardoniteszt\Models\Maincat
 
 # List Title
-title: Manage Products
+title: Manage Maincats
 
 # Link URL for each record
-recordUrl: arteriaweb/bardoniteszt/products/update/:id
-
-# Record on click
-# recordOnClick: false
+recordUrl: arteriaweb/bardoniteszt/maincats/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records
@@ -35,7 +32,7 @@ showSorting: true
 #     direction: desc
 
 # Display checkboxes next to each record
-showCheckboxes: true
+# showCheckboxes: true
 
 # Toolbar widget configuration
 toolbar:
@@ -45,7 +42,3 @@ toolbar:
     # Search widget configuration
     search:
         prompt: backend::lang.list.search_prompt
-
-
-# tree view
-# showTree: true
